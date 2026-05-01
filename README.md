@@ -25,9 +25,9 @@
 | Module | Semaines | Environnement | Challenge Final |
 |--------|----------|---------------|-----------------|
 | 1 - Fondations | 1-4 | Console Node.js | ⛏️ Minecraft Math Mining |
-| 2 - Structures de données | 5-7 | Console + terminal-kit | ⚔️ Combat RPG tour par tour |
-| 3 - Jeux console | 8-11 | terminal-kit avancé | 🐍 Snake ASCII |
-| 4 - Canvas Web | 12-15 | Navigateur (HTML minimal) | 👾 Space Invaders mini |
+| 2 - Structures de données | 5-8 | Console + terminal-kit | ⚔️ Combat RPG tour par tour |
+| 3 - Jeux console | 9-12 | terminal-kit avancé | 🐍 Snake ASCII |
+| 4 - Canvas Web | 13-16 | Navigateur (HTML minimal) | 👾 Space Invaders mini |
 
 ---
 
@@ -91,9 +91,9 @@ Compétences validées :
 
 ---
 
-## 📖 Module 2 : Structures de données (Semaines 5-7)
+## 📖 Module 2 : Structures de données (Semaines 5-8)
 
-**Objectif** : Manipuler tableaux et objets
+**Objectif** : Manipuler tableaux et objets, simples puis imbriqués
 
 ### Semaine 5 : Tableaux
 - Créer un tableau `[]`
@@ -109,49 +109,56 @@ Compétences validées :
 
 ### Semaine 7 : Tableaux d'objets
 - Combiner tableaux et objets
-- Rechercher, filtrer
-- **Mini-projet** : Inventaire d'items
+- Rechercher (`find`), filtrer (`filter`)
+- **Mini-projet** : Inventaire d'items Minecraft
+
+### Semaine 8 : Objets imbriqués 🎁
+- Objets dans objets (`hero.equipement.arme.degats`)
+- Tableaux dans objets, objets dans tableaux d'objets
+- Modifier en profondeur
+- **Mini-projet** : Équipe RPG (3 héros avec stats et compétences)
 
 ### ⚔️ Challenge Module 2 : Combat RPG tour par tour
 
 ```
 Concept : Combat au tour par tour style RPG
-- Héros vs Monstre (objets avec stats)
-- Actions : Attaquer, Défendre, Potion
-- Inventaire de potions (tableau)
-- Barres de vie colorées (terminal-kit)
+- Héros vs Monstre (objets avec stats imbriquées)
+- Équipement : arme et armure (sous-objets)
+- Actions : Attaquer, Défendre, Potion, Fuir
+- Inventaire d'objets équipables (tableau d'objets)
+- Barres de vie colorées (intro terminal-kit)
 
 Compétences validées :
-✅ Objets (personnages avec PV, attaque, défense)
-✅ Tableaux (inventaire)
+✅ Objets imbriqués (hero.stats, hero.equipement.arme...)
+✅ Tableaux d'objets (inventaire de potions/items)
 ✅ Logique de jeu complexe
 ✅ Introduction terminal-kit (couleurs)
 ```
 
 ---
 
-## 📖 Module 3 : Jeux console avancés (Semaines 8-11)
+## 📖 Module 3 : Jeux console avancés (Semaines 9-12)
 
 **Objectif** : Créer des jeux interactifs en terminal avec terminal-kit
 
-### Semaine 8 : Introduction terminal-kit
+### Semaine 9 : Introduction terminal-kit
 - Installation et import
 - Couleurs et styles
 - Effacer l'écran
 - **Mini-projet** : Texte arc-en-ciel animé
 
-### Semaine 9 : Entrées clavier temps réel
+### Semaine 10 : Entrées clavier temps réel
 - Écouter les touches
 - Réagir sans appuyer sur Entrée
 - **Mini-projet** : Jeu de réflexe
 
-### Semaine 10 : Grilles 2D
+### Semaine 11 : Grilles 2D
 - Tableau de tableaux
 - Coordonnées (x, y)
 - Afficher une grille
 - **Mini-projet** : Morpion
 
-### Semaine 11 : Boucle de jeu (Game Loop)
+### Semaine 12 : Boucle de jeu (Game Loop)
 - `setInterval` / `setTimeout`
 - Mettre à jour → Afficher → Répéter
 - **Mini-projet** : Personnage qui bouge
@@ -174,29 +181,29 @@ Compétences validées :
 
 ---
 
-## 📖 Module 4 : Canvas Web (Semaines 12-15)
+## 📖 Module 4 : Canvas Web (Semaines 13-16)
 
 **Objectif** : Créer des jeux graphiques avec Canvas (HTML minimal)
 
-### Semaine 12 : Bases du Canvas
+### Semaine 13 : Bases du Canvas
 - HTML minimal (template fourni)
 - Contexte 2D
 - Dessiner : rectangles, cercles, lignes
 - Couleurs et styles
 - **Mini-projet** : Dessiner des formes
 
-### Semaine 13 : Animation
+### Semaine 14 : Animation
 - `requestAnimationFrame`
 - Effacer et redessiner
 - Vélocité et position
 - **Mini-projet** : Balle qui rebondit
 
-### Semaine 14 : Interactivité
+### Semaine 15 : Interactivité
 - Événements clavier
 - Événements souris
 - **Mini-projet** : Contrôler un vaisseau
 
-### Semaine 15 : Finalisation
+### Semaine 16 : Finalisation
 - Charger des images
 - Sons (basique)
 - Polish du jeu
@@ -248,24 +255,25 @@ cours_JS_enfant/
 │       └── squelette.js
 │
 ├── module_2_structures/
-│   ├── semaine_05/
-│   ├── semaine_06/
-│   ├── semaine_07/
+│   ├── semaine_05/            # Tableaux
+│   ├── semaine_06/            # Objets
+│   ├── semaine_07/            # Tableaux d'objets
+│   ├── semaine_08/            # Objets imbriqués
 │   └── challenge_combat_rpg/
 │
 ├── module_3_jeux_console/
-│   ├── semaine_08/
 │   ├── semaine_09/
 │   ├── semaine_10/
 │   ├── semaine_11/
+│   ├── semaine_12/
 │   └── challenge_snake/
 │
 ├── module_4_canvas/
 │   ├── template.html          # HTML minimal réutilisable
-│   ├── semaine_12/
 │   ├── semaine_13/
 │   ├── semaine_14/
 │   ├── semaine_15/
+│   ├── semaine_16/
 │   └── challenge_space_invaders/
 │
 └── aide-memoire/
