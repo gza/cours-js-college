@@ -11,7 +11,7 @@
 
 - **Projets concrets** dès le début (pas de théorie abstraite)
 - **Comparaisons visuelles** Scratch ↔ JavaScript
-- **Progression** : Console → Console colorée (terminal-kit) → Canvas Web
+- **Progression** : Console → Console enrichie → Terminal interactif (terminal-kit) → Canvas Web
 - **Un challenge** pour valider chaque module
 - **Thème fil rouge** : Minecraft / Jeux
 - **Un fichier par exercice** : plus clair, progression pas à pas
@@ -25,8 +25,8 @@
 | Module | Semaines | Environnement | Challenge Final |
 |--------|----------|---------------|-----------------|
 | 1 - Fondations | 1-4 | Console Node.js | ⛏️ Minecraft Math Mining |
-| 2 - Structures de données | 5-8 | Console + terminal-kit | ⚔️ Combat RPG tour par tour |
-| 3 - Jeux console | 9-12 | terminal-kit avancé | 🐍 Snake ASCII |
+| 2 - Structures de données | 5-8 | Console Node.js | ⚔️ Combat RPG tour par tour |
+| 3 - Jeux console | 9-12 | Terminal interactif (terminal-kit) | 🐍 Snake ASCII |
 | 4 - Canvas Web | 13-16 | Navigateur (HTML minimal) | 👾 Space Invaders mini |
 
 ---
@@ -126,13 +126,13 @@ Concept : Combat au tour par tour style RPG
 - Équipement : arme et armure (sous-objets)
 - Actions : Attaquer, Défendre, Potion, Fuir
 - Inventaire d'objets équipables (tableau d'objets)
-- Barres de vie colorées (intro terminal-kit)
+- Barres de vie textuelles en console
 
 Compétences validées :
 ✅ Objets imbriqués (hero.stats, hero.equipement.arme...)
 ✅ Tableaux d'objets (inventaire de potions/items)
 ✅ Logique de jeu complexe
-✅ Introduction terminal-kit (couleurs)
+✅ Affichage console structuré
 ```
 
 ---

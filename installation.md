@@ -10,7 +10,7 @@ Ce guide explique comment installer les outils nécessaires pour le cours de Jav
 |-------|------|
 | **Node.js** | Exécuter du JavaScript dans le terminal |
 | **Geany** | Éditeur de code simple et efficace |
-| **terminal-kit** | Bibliothèque pour les couleurs/animations (plus tard) |
+| **terminal-kit** | Bibliothèque pour les couleurs/animations (à partir du module 3) |
 
 ---
 
@@ -160,9 +160,9 @@ Tu devrais voir dans le terminal :
 
 ---
 
-## 📦 Installation de terminal-kit (Module 2+)
+## 📦 Installation de terminal-kit (Module 3)
 
-> ⚠️ À faire seulement quand on arrive au Module 2 !
+> ⚠️ À faire seulement quand on arrive au Module 3 !
 
 Dans le dossier de ton projet, ouvre un terminal et tape :
 
