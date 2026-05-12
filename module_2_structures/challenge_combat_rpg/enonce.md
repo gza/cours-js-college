@@ -1,7 +1,7 @@
 # ⚔️ Challenge Module 2 : Combat RPG tour par tour
 
 > **Objectif** : Créer un combat tour par tour entre un héros et un monstre
-> **Compétences utilisées** : objets imbriqués, tableaux d'objets, fonctions, conditions, boucles, intro `terminal-kit`
+> **Compétences utilisées** : objets imbriqués, tableaux d'objets, fonctions, conditions, boucles, affichage console
 > **Temps estimé** : 2-3 heures
 
 ---
@@ -73,28 +73,9 @@ Le monstre attaque toujours (sauf si le héros a déjà gagné).
 ---
 <div class="page-break"></div>
 
-## 🎨 Affichage avec terminal-kit
+## 🎨 Affichage console simple
 
-On va utiliser **terminal-kit** pour des barres de vie colorées.
-
-### Installation (une seule fois)
-
-```bash
-npm install terminal-kit
-```
-
-### Mini exemple
-
-```javascript
-const term = require('terminal-kit').terminal;
-
-term.green("Texte vert\n");
-term.red("Texte rouge\n");
-term.yellow.bold("Texte jaune en gras\n");
-
-// Caractères de remplissage de barre :
-console.log("█████░░░░░");
-```
+Pour ce challenge, on reste en **console Node.js**, sans bibliothèque externe.
 
 ### Idée de barre de vie
 
@@ -105,11 +86,7 @@ function afficherBarreVie(nom, pv, pvMax) {
     let vides  = largeur - pleins;
     let barre  = "█".repeat(pleins) + "░".repeat(vides);
 
-    term.bold(nom + " ");
-    if (pv > pvMax * 0.5) term.green(barre);
-    else if (pv > pvMax * 0.2) term.yellow(barre);
-    else term.red(barre);
-    term(` ${pv}/${pvMax}\n`);
+    console.log(`${nom} [${barre}] ${pv}/${pvMax}`);
 }
 ```
 
@@ -128,7 +105,7 @@ function afficherBarreVie(nom, pv, pvMax) {
 5. **Tour du monstre** : choisit toujours d'attaquer (au début).
 6. **Boucle de jeu** : tant que les deux ont `pv > 0`, faire un tour. Afficher le gagnant à la fin.
 
-> 💡 **Pour démarrer simple** : commence par enchaîner les actions **dans le code** (pas d'input clavier). Tu pourras ajouter `term.singleColumnMenu([...])` plus tard.
+> 💡 **Pour démarrer simple** : commence par enchaîner les actions **dans le code** (pas d'input clavier). Tu pourras ajouter un vrai menu interactif plus tard, au module 3.
 
 ---
 
@@ -138,7 +115,7 @@ function afficherBarreVie(nom, pv, pvMax) {
 - ✅ Tableaux d'objets (inventaire de potions)
 - ✅ Fonctions avec paramètres et `return`
 - ✅ Conditions et boucles
-- ✅ Première utilisation de `terminal-kit`
+- ✅ Affichage console clair et lisible
 
 ---
 

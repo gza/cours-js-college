@@ -2,17 +2,11 @@
 // ║         CHALLENGE MODULE 2 : Combat RPG tour par tour ⚔️          ║
 // ╚═══════════════════════════════════════════════════════════════════╝
 //
-// Avant de lancer ce fichier, installe terminal-kit :
-//
-//     npm install terminal-kit
-//
-// Puis exécute :
+// Exécute ce fichier avec Node.js :
 //
 //     node squelette.js
 //
 // ═══════════════════════════════════════════════════════════════════
-
-const term = require('terminal-kit').terminal;
 
 // ═══════════════════════════════════════════════════════════════════
 // CONSTANTES
@@ -56,21 +50,22 @@ let monstre = {
 // AFFICHAGE
 // ═══════════════════════════════════════════════════════════════════
 
-// Affiche une barre de vie colorée pour un personnage.
+// Affiche une barre de vie en texte pour un personnage.
 function afficherBarreVie(perso) {
     // À compléter :
     //  - calculer le nombre de █ pleins selon (pv / pvMax) * LARGEUR_BARRE
-    //  - choisir une couleur : vert > 50%, jaune > 20%, rouge sinon
-    //  - utiliser term.green / term.yellow / term.red
+    //  - construire une barre avec des █ pleins et des ░ vides
+    //  - afficher une ligne du style :
+    //      Steve [████████████░░░░░░░░] 18/30
 
 }
 
 // Affiche les deux combattants.
 function afficherCombat() {
-    term.cyan("\n──────── COMBAT ────────\n");
+    console.log("\n──────── COMBAT ────────");
     afficherBarreVie(heros);
     afficherBarreVie(monstre);
-    term("\n");
+    console.log("");
 }
 
 
@@ -143,7 +138,7 @@ function tourMonstre() {
 
 // Pour commencer SIMPLE : enchaîne ici une suite d'actions
 // "à la main" pour tester. Tu pourras ensuite remplacer par
-// un menu interactif avec term.singleColumnMenu(...).
+// une vraie boucle de jeu, puis plus tard par un menu interactif.
 function jouer() {
     afficherCombat();
 
@@ -163,11 +158,11 @@ function jouer() {
 
     // Annonce du gagnant
     if (heros.pv <= 0 && monstre.pv <= 0) {
-        term.yellow("\n💥 Égalité !\n");
+        console.log("\n💥 Égalité !");
     } else if (heros.pv <= 0) {
-        term.red(`\n💀 ${monstre.nom} a vaincu ${heros.nom}...\n`);
+        console.log(`\n💀 ${monstre.nom} a vaincu ${heros.nom}...`);
     } else if (monstre.pv <= 0) {
-        term.green(`\n🏆 ${heros.nom} a vaincu ${monstre.nom} !\n`);
+        console.log(`\n🏆 ${heros.nom} a vaincu ${monstre.nom} !`);
     }
 
     process.exit();
