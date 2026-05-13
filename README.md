@@ -1,4 +1,4 @@
-# 📚 Plan de Cours JavaScript - 5ème
+# 📚 Plan de Cours JavaScript
 
 > **Élève** : 5ème, maîtrise Scratch  
 > **Durée** : 2h / semaine  
@@ -262,11 +262,13 @@ cours_JS_enfant/
 │   └── challenge_combat_rpg/
 │
 ├── module_3_jeux_console/
-│   ├── semaine_09/
-│   ├── semaine_10/
-│   ├── semaine_11/
-│   ├── semaine_12/
+│   ├── semaine_09/            # Introduction terminal-kit
+│   ├── semaine_10/            # Entrées clavier temps réel
+│   ├── semaine_11/            # Grilles 2D
+│   ├── semaine_12/            # Boucle de jeu
 │   └── challenge_snake/
+│       ├── enonce.md
+│       └── squelette.js
 │
 ├── module_4_canvas/
 │   ├── template.html          # HTML minimal réutilisable
